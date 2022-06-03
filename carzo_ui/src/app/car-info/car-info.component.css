@@ -1,0 +1,41 @@
+@font-face {
+    font-family: barlo-bold;
+    src: url(src/assets/fonts/Barlow-Bold.ttf);
+}
+@font-face {
+    font-family: barlo-medium;
+    src: url(src/assets/fonts/Barlow-Medium.ttf);
+}
+.home-bg{
+    background-image: unset !important;
+}
+.w-51{
+    width: 51%;
+}
+.width-283{
+    width: 283px;
+}
+.center-form {
+    width: 43%;
+    margin: 0 auto;
+}
+.center-form label{
+    color: #414040;
+    font-family: barlo-medium;
+    font-size: 18px;
+}
+.center-form .custom-select{
+    height: calc(1.9em + .79rem + 2px);
+    margin-bottom: 4px;
+}
+.center-form .custom-select{
+    border: 1px solid #707070;
+    font-size: 18px;
+}
+.bg-image{
+    background-repeat: no-repeat;
+    background-position: -63% 19%;
+    background-size:cover;
+    min-height: 89vh;
+    
+}

@@ -1,0 +1,43 @@
+<div *ngIf="spinnerShow" class="loader">Loading&#8230;</div>
+<div class="bg-image">
+<div class="container form-container  mb-5">
+   
+    <form [formGroup]="contactForm"  class="main-form pt-3">
+            <div class="form-title"> 
+                    <h1>CONTACT INFO</h1>
+                    <span class="bottom-border"></span>
+                </div>
+            <div class="form-group">
+                <label>Email Address<span class="error" *ngIf="contactForm.controls.email.invalid  && submitted">*</span></label>
+                <input type="text" formControlName="email" class="form-control width-283"   [(ngModel)]="contactinfo.email"/>
+                <div class="custom-control custom-checkbox inner-checkbox pt-2">
+                        <input type="checkbox" class="custom-control-input" id="emailupdate" name="emailupdate" >
+                        <label class="custom-control-label" for="emailupdate"><span class="msg-span">Yes, I would like to receive occasional emails with price alerts and updates.</span></label>
+                      </div>
+                <!-- <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+                    <div *ngIf="f.email.errors.required">Email is required</div>
+                    <div *ngIf="f.email.errors.email">Email must be a valid email address</div>
+                </div> -->
+            </div>
+            <div class="form-group">
+                <label>Phone number<span class="error" *ngIf="contactForm.controls.phoneNumber.invalid  && submitted">*</span></label>
+                <input type="text" formControlName="phoneNumber" class="form-control width-283" [(ngModel)]="contactinfo.phoneNumber" (keypress)="numericOnly($event)"/>
+                <div class="custom-control custom-checkbox inner-checkbox pt-2">
+                        <input type="checkbox" class="custom-control-input" id="phonenumberupdate" name="phonenumberupdate" >
+                        <label class="custom-control-label" for="phonenumberupdate"><span class="msg-span">Yes, I would like to receive occasional emails with price alerts and updates.</span></label>
+                 </div>
+                <!-- <div *ngIf="submitted && f.phoneNumber.errors" class="invalid-feedback">
+                    <div *ngIf="f.phoneNumber.errors.required">Password is required</div>
+                </div> -->
+            </div>
+            <div class="form-group">
+                    <label> All the information on this website is published in good faith and for general information purpose only. Website Name does not make any warranties about the completeness, reliability and accuracy of this information. Any action you take upon the information you find on this website (Website.com), is strictly at your own risk. will not be liable for any losses and/or damages in connection with the use of our website.</label>
+            </div>
+            <div class="form-group text-right mt-5">
+                <span class="prevnext prev" (click)="goToPrevious(contactForm)"><span class="icon-prev"></span>Previous</span><span class="prevnext next"
+                   (click)="goToNext(contactForm)">Next<span class="icon-next"></span></span>
+            </div>
+        </form>
+
+</div>
+</div>

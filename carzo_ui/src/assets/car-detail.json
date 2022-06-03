@@ -1,0 +1,34 @@
+{
+    "data" :   [
+        {
+            "type" : "Body Injury Liability Coverage",
+            "coverage" : "$50,000 per person/$100,000 per accident",
+            "payment" : "$205.00"
+        },
+        {
+            "type" : "Property Damage Coverage",
+            "coverage" : "$50,000 per person/$100,000 per accident",
+            "payment" : "$205.00"
+        },
+        {
+            "type" : "Uninsured/Underinsured body injury coverage",
+            "coverage" : "$50,000 per person/$100,000 per accident",
+            "payment" : "$205.00"
+        },
+        {
+            "type" : "Medical Payments Coverage",
+            "coverage" : "$50,000 per person/$100,000 per accident",
+            "payment" : "$205.00"
+        },
+        {
+            "type" : "Responsible Driver Plans",
+            "coverage" : "Not Scheduled",
+            "payment" : "-"
+        },
+        {
+            "type" : "Responsible Driver Plans",
+            "coverage" : "Not Scheduled",
+            "payment" : "-"
+        }
+    ]
+}

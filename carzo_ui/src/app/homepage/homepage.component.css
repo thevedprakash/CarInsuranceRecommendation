@@ -1,0 +1,100 @@
+@font-face {
+    font-family: barlo-regular;
+    src: url(/src/assets/fonts/Barlow-Regular.ttf);
+  }
+@font-face {
+    font-family: barlo-bold;
+    src: url(/src/assets/fonts/Barlow-Bold.ttf);
+}
+@font-face {
+    font-family: barlo-medium;
+    src: url(/src/assets/fonts/Barlow-Medium.ttf);
+}
+
+.left-container h2{
+    position: relative;
+    font-size: 34px;
+    color: #142535;
+    width: 500px;
+}
+.left-container h2:after{
+    content: "";
+    position: absolute;    
+    display: block;
+    width: 141px;
+    background-color: #ff0000;
+    height: 5px;
+    top: 102px;
+    left: 3px;
+}
+.left-container button{
+    text-transform: uppercase;
+    font-weight: 700;
+    width: 275px;
+    height: 68px;
+    background-color: #DC0000; 
+    font-size: 17px;
+    border-radius: 10px;
+}
+.left-container button a{
+    color: #fff;
+    text-decoration: none;
+}
+.mt-62{
+    margin-top: 62px;
+}
+.fees-container{
+    width: 324px;
+    padding: 12px 20px 4px;
+    border: 5px double #DFDFDF;
+    border-radius: 8px;
+    color: #A8A8A8;
+    font-size: 16px;
+}
+.fees-container p:nth-child(1){
+    font-size: 34px;
+    font-weight: 800;
+    color: #ff0000;
+    margin-bottom: 5px;
+    font-family: barlo-bold;
+}
+.main-container{
+    /* width: 85%;
+    margin: 0 auto; */
+}
+.why-carzo-div{
+    width: 60%;
+    margin: 0 auto;
+}
+.why-carzo-div h4{
+    font-family: barlo-bold;
+    color: #2B2B2B;
+    font-size: 24px;
+    /* margin-left: 73px; */
+}
+.why-carzo-div p{
+    color: #888888;
+    font-size: 16px;
+    /* margin-left: 73px; */
+    width: 160px;
+}
+.mt-10{
+    margin-top: -10px;
+}
+.inner-container{
+    margin: 0 auto;
+    background-color: #F9F9F9;
+}
+.img-div{
+    width: 280px;
+    margin: 0 auto;
+}
+.width-90{
+    width: 90%;
+}
+@media(max-width: 1400px){
+    .why-carzo-div {
+        width: 74%;
+        margin: 0 auto;
+    }
+}

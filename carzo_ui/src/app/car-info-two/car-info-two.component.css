@@ -1,0 +1,62 @@
+@font-face {
+    font-family: barlo-bold;
+    src: url(src/assets/fonts/Barlow-Bold.ttf);
+}
+@font-face {
+    font-family: barlo-medium;
+    src: url(src/assets/fonts/Barlow-Medium.ttf);
+}
+.w-283{
+    width: 283px;
+}
+.inner-span-des{
+    display: block;
+    color: #5A5A5A;
+    font-size: 18px;
+    font-family: barlo-medium;
+    line-height: 27px;
+}
+.inner-span-des1{
+    display: block;
+    color: #5A5A5A;
+    font-size: 18px;
+    line-height: 27px;
+}
+.desc-radio-div .custom-control-label{
+    border: 1px solid #5A5A5A;
+    padding: 20px 30px 20px 70px;
+    border-radius: 5px;
+    width: 100%;
+}
+.desc-radio-div input:checked~.custom-control-label{
+border: 1px solid #DC0000;
+}
+
+.desc-radio-div .custom-radio{
+    padding-left: 0px;
+}
+.desc-radio-div .custom-control-label::before{
+    left: 18px;
+    top: 39%;
+    bottom: 41%;
+}
+.bg-image{  
+    background-position: 12% -30%;
+    background-size: 97%;
+    
+}
+.desc-radio-div .custom-radio .custom-control-input:checked~.custom-control-label::after{
+    content: "\00a0";
+    display: block;
+    width: 5px;
+    height: 10px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    top: 44.5%;
+    bottom: 46%;
+    left: 27px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+}
+

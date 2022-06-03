@@ -1,0 +1,101 @@
+<div class="bg-image">
+<div class="container form-container pb-4  mb-5">
+
+        <form [formGroup]="contactForm" class="main-form pt-3">
+            <div class="form-title">
+                <h1>YOUR HOME</h1>
+                <span class="bottom-border"></span>
+            </div>
+            <div class="row " formGroupName="address">
+                <div class="col-md-12 pt-4"> <label>Address</label></div>
+                <div class="col-md-9 text-group pr-0">
+                    <div class="form-group pt-0 pb-1">
+                        <label class="d-block">Street Address</label>
+                        <input type="text" class="form-control form-control-lg" formControlName="streetAddress"  [(ngModel)]="yourHome.address.streetAddress">
+                    </div>
+                </div>
+                <div class="col-md-3 text-group pr-0">
+                    <div class="form-group pt-0 pb-1">
+                        <label class="d-block">Apt #</label>
+                        <input type="text" class="form-control form-control-lg" formControlName="apt"  [(ngModel)]="yourHome.address.apt">
+                    </div>
+                </div>
+                <div class="col-md-6 text-group pr-0">
+                    <div class="form-group pt-0 pb-1">
+                        <label class="d-block">City</label>
+                        <input type="text" class="form-control form-control-lg" formControlName="city"  [(ngModel)]="yourHome.address.city">
+                    </div>
+                </div>
+                <div class="col-md-3 text-group pr-0">
+                    <div class="form-group pt-0 pb-1">
+                        <label class="d-block">State<span class="error" *ngIf="submitted">*</span></label>
+                        <input type="text" class="form-control form-control-lg" formControlName="state"  [(ngModel)]="yourHome.address.state">
+                    </div>
+                </div>
+                <div class="col-md-3 text-group pr-0">
+                    <div class="form-group pt-0 pb-1">
+                        <label class="d-block">Zip Code</label>
+                        <input type="text" class="form-control form-control-lg" formControlName="zipCode"  [(ngModel)]="yourHome.address.zipCode">
+                       
+                    </div>
+                </div>
+            </div>
+            <div class="form-group pb-0">
+                <label class="d-block">How long have you lived at this residence?</label>
+                <div class="custom-control custom-radio  border-checkbox-div  custom-control-inline pl-0">
+                        <input type="radio" class="custom-control-input" id="LessthansixMonth" formControlName="residence" value="Less than 6 Month" checked  [(ngModel)]="yourHome.residence">
+                        <label class="custom-control-label" for="LessthansixMonth">Less than 6 Month</label>
+                    </div>
+                <div class="custom-control custom-radio  border-checkbox-div  custom-control-inline pl-0">
+                    <input type="radio" class="custom-control-input" id="oneyear" formControlName="residence" value="1 Year" [(ngModel)]="yourHome.residence" >
+                    <label class="custom-control-label" for="oneyear">1 Year</label>
+                </div>
+                <div class="custom-control custom-radio  border-checkbox-div  custom-control-inline pl-0">
+                    <input type="radio" class="custom-control-input" id="twoyear" formControlName="residence" value="2 Year"  [(ngModel)]="yourHome.residence">
+                    <label class="custom-control-label" for="twoyear">2 Years</label>
+                </div>
+                <div class="custom-control custom-radio  border-checkbox-div  custom-control-inline pl-0">
+                    <input type="radio" class="custom-control-input" id="threeyear" formControlName="residence" value="3 Year"   [(ngModel)]="yourHome.residence">
+                    <label class="custom-control-label" for="threeyear">3 Years</label>
+                </div>
+                <div class="custom-control custom-radio  border-checkbox-div  custom-control-inline pl-0">
+                    <input type="radio" class="custom-control-input" id="fouryear" formControlName="residence" value="4 Year" [(ngModel)]="yourHome.residence" >
+                    <label class="custom-control-label" for="fouryear">4 Years</label>
+                </div>
+                <div class="custom-control custom-radio  border-checkbox-div  custom-control-inline pl-0">
+                    <input type="radio" class="custom-control-input" id="fiveyear" formControlName="residence" value="5 Year"  [(ngModel)]="yourHome.residence">
+                    <label class="custom-control-label" for="fiveyear">5 Years</label>
+                </div>
+                <div class="custom-control custom-radio  border-checkbox-div  custom-control-inline pl-0">
+                    <input type="radio" class="custom-control-input" id="sixplusyear" formControlName="residence" value="6+ Year"  [(ngModel)]="yourHome.residence">
+                    <label class="custom-control-label" for="sixplusyear">6+ Years</label>
+                </div>
+            </div>
+            <div class="form-group pb-0">
+                <label class="d-block">Do you rent or own your home?</label>
+                <div class="custom-control custom-radio  border-checkbox-div  custom-control-inline pl-0">
+                        <input type="radio" class="custom-control-input" id="Rent" formControlName="rentorown" value="Rent" [(ngModel)]="yourHome.rentorown" >
+                        <label class="custom-control-label" for="Rent">Rent</label>
+                    </div>
+                <div class="custom-control custom-radio  border-checkbox-div  custom-control-inline pl-0">
+                    <input type="radio" class="custom-control-input" id="Own" formControlName="rentorown" value="Own" checked  [(ngModel)]="yourHome.rentorown"> 
+                    <label class="custom-control-label" for="Own">Own</label>
+                </div>                
+                <div class="custom-control custom-radio  border-checkbox-div  custom-control-inline pl-0">
+                    <input type="radio" class="custom-control-input" id="Other" formControlName="rentorown" value="Other" [(ngModel)]="yourHome.rentorown">
+                    <label class="custom-control-label" for="Other">Other</label>
+                </div>
+    
+            </div>
+            <div class="form-group">
+                    <label for="comment">Describe the accommodation details.</label>
+                    <textarea class="form-control" rows="3" id="accommodation" formControlName="accommodation"  [(ngModel)]="yourHome.accommodation"></textarea>
+                  </div>
+            <div class="form-group text-right mt-5">
+                <span class="prevnext prev" (click)="goToPrevious(contactForm)"><span class="icon-prev"></span>Previous</span><span class="prevnext next"
+                (click)="goToNext(contactForm)">Next<span class="icon-next"></span></span>
+            </div>
+        </form>
+    
+    </div>
+    </div>

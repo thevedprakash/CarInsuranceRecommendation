@@ -1,0 +1,39 @@
+@font-face {
+    font-family: barlo-regular;
+    src: url(/src/assets/fonts/Barlow-Regular.ttf);
+  }
+@font-face {
+    font-family: barlo-bold;
+    src: url(/src/assets/fonts/Barlow-Bold.ttf);
+}
+@font-face {
+    font-family: barlo-medium;
+    src: url(/src/assets/fonts/Barlow-Medium.ttf);
+}
+@import url('https://fonts.googleapis.com/css?family=Barlow:300,300i,400,500,600,700,800,900&display=swap');
+.main-header{
+    text-transform: uppercase;
+    padding: 22px;
+    border-bottom: 1px solid #00000029;
+}
+.main-header ul li a{
+    color: #353535;
+    font-size: 14px;
+    margin-right: 25px;
+    font-family: barlo-medium;
+    font-weight: 600;
+    
+}
+.main-header ul li a.login{
+    background-color: #AC0000;
+    font-size: 13px;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 2px 9px;
+    margin: 7px 0px; 
+}
+.main-header ul li a.active{
+    color: #DC0000;
+    font-weight: 800;
+}

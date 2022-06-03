@@ -1,0 +1,555 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: barlo-regular;
+    src: url(assets/fonts/Barlow-Regular.ttf);
+  }
+@font-face {
+    font-family: barlo-bold;
+    src: url(assets/fonts/Barlow-Bold.ttf);
+}
+@font-face {
+    font-family: barlo-medium;
+    src: url(assets/fonts/Barlow-Medium.ttf);
+}
+@font-face {
+    font-family: barlo-medium;
+    src:  url(assets/fonts/Barlow-Light.ttf);
+}
+@font-face {
+    font-family: barlo-semibold;
+    src:  url(assets/fonts/Barlow-SemiBold.ttf);
+}
+@font-face {
+    font-family: montserrat-regular;
+    src: url(assets/fonts/Montserrat-Regular.ttf);
+}
+html, body {
+    height: 100%;
+    margin: 0px;
+}
+body{
+    overflow: hidden;
+}
+.home-bg{
+    background-image: url("assets/images/HOME_IMAGE.svg");
+    background-position: top center;
+    background-size: 107%;
+    background-repeat: no-repeat;
+    overflow: auto;
+}
+h1,h2,h3,h4,h5,p,span,a,label,li{
+    font-family: barlo-regular;
+}
+.color-a8{
+    color: #A8A8A8;
+}
+.font-16{
+    font-size: 16px;
+}
+.font-18{
+    font-size: 18px;
+}
+.font-12{
+    font-size: 12px;
+}
+.font-bold{
+    font-family: barlo-bold;
+}
+.font-medium{
+    font-family: barlo-medium;
+}
+.font-semibold{
+    font-family: barlo-medium;
+}
+.color-black{
+    color: #000000;
+}
+.border-right{
+    border-right: 1px solid #afa5a5!important;
+}
+.color-5A{
+    color: #5A5A5A;
+}
+.form-title h1{
+    color: #616161;
+    font-size: 30px;
+    font-family: barlo-medium;
+    word-spacing: 7px;
+    text-transform: uppercase;
+}
+.form-title span{
+    content: "";
+    display: block;
+    width: 141px;
+    background-color: #DC0000;
+    height: 4px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+.width-86{
+    width: 86%;
+}
+.form-container{
+    border: 1px solid #00000029;
+    padding-top: 50px;
+}
+.main-form .form-group{
+    padding: 25px 0px;
+}
+.pb-170{
+    padding-bottom: 170px;
+}
+.main-form{
+    width: 82%;
+    margin: 0 auto;
+}
+.main-form label{
+color: #414040;
+font-family: barlo-medium;
+font-size: 18px;
+margin-bottom: 13px;
+}
+.prev:after{
+    background-image: url(assets/images/Previous_arrow.png);
+    width: 50px;
+    height: 50px;
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    left: -14px;
+    background-size: 36px;
+    top: -3px;
+}
+.next::before{
+    background-image: url(assets/images/Next_Arrow.png);
+    width: 50px;
+    height: 50px;
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    right: -29px;
+    background-size: 36px;
+    top: -2px;
+}
+.prevnext{
+    Color: #929292;
+    font-size: 18px;
+    padding: 3px 18px;
+    font-family: barlo-medium;
+    position: relative;
+    cursor: pointer;
+}
+.next{
+    border-left: 1px solid #948f8f;
+   
+}
+.center-form .custom-select{
+    background: url('assets/images/Drop_Arrow.png')  no-repeat right 0.40rem center/35px 33px;
+}
+.main-form .custom-select{
+    background: url('assets/images/Drop_Arrow.png')  no-repeat right 0.40rem center/35px 33px;
+}
+/* custom icon checkbox */
+.inline-checkbox-div .custom-control{
+    display: inline-flex;
+}
+.inline-checkbox-div  .custom-radio .custom-control-input~.custom-control-label::before{
+    width: 101px;
+    height: 78px;
+    border-radius: 5px;
+    background-color: transparent;
+    border: 1px solid #5A5A5A;
+}
+.inline-checkbox-div .custom-control-label{
+    width: 101px;
+    height: 78px;
+    border-radius: 5px;
+    background-color: transparent;
+    font-size: 18px;
+    color: #5A5A5A;
+}
+.inline-checkbox-div  .custom-radio .custom-control-input:checked~.custom-control-label::before{
+    width: 101px;
+    height: 78px;
+    border-radius: 5px;
+    border: 1px solid #DC0000;
+}
+.inline-checkbox-div #customRadio~.custom-control-label::after{
+    background-image: url('assets/images/Own.png');
+    width: 68px;
+    height: 84px;
+    background-position: 102% 23%;
+}
+.inline-checkbox-div #customRadio:checked~.custom-control-label::after{
+    background-image: url('assets/images/Own_selected.png');
+    width: 68px;
+    height: 84px;
+    color: #DC0000;
+    background-position: 102% 23%;
+}
+.inline-checkbox-div #customRadio2~.custom-control-label::after{
+    background-image: url('assets/images/Lease.png');
+    width: 80px;
+    height: 80px;
+    background-position: 79% 33%;
+}
+.inline-checkbox-div #customRadio2:checked~.custom-control-label::after{
+    background-image: url('assets/images/Lease_selected.png');
+    width: 80px;
+    height: 80px;
+    color: #DC0000;
+    background-position: 79% 33%;
+}
+.inline-checkbox-div span{
+    padding-top: 55px;
+    display: inline-block;
+    width: 100%;
+    padding-left: 12px;
+}
+.inline-checkbox-div #customRadio2~label span{
+    padding-left: 5px;
+}
+/* custom icon end checkbox */
+.desc-radio-div .custom-radio .custom-control-label::before{
+    width: 23px;
+    height: 23px;
+}
+.desc-radio-div .custom-radio .custom-control-input:checked~.custom-control-label::after{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8…M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+}
+.desc-radio-div .custom-control-input:checked~.custom-control-label::before{
+    border-color: #DC0000;
+    background-color: #DC0000;
+}
+.desc-radio-div .custom-control-label::before,.desc-radio-div  .custom-file-label,.desc-radio-div  .custom-select{
+    transition: unset;
+}
+/* custom  toggle switch*/
+.toggle-switch-div .custom-switch .custom-control-label::before{
+    width: 57px;
+    height: 32px;
+    border-radius: 16px;
+    background-color: #adb5bd;
+}
+.toggle-switch-div .custom-switch .custom-control-label::after{
+    width: calc(32px - 4px);
+    height: calc(32px - 4px);
+    background-color: #fff;
+    border-radius: 50%;
+    left: calc(-2.26rem + 2px);
+}
+.toggle-switch-div .custom-switch .custom-control-label::before{
+    width: 57px;
+    height: 32px;
+    border-radius: 16px;
+    background-color: #adb5bd;
+}
+.toggle-switch-div .custom-switch .custom-control-input:checked~.custom-control-label::after{
+    transform: translateX(1.57rem);
+}
+.toggle-switch-div .custom-switch .custom-control-input:checked~.custom-control-label::before{
+    background-color: #DC0000;
+    border: 1px solid #DC0000;
+}
+/* custom toggle switch end */
+.w-283{
+    width: 283px;
+}
+.inline-checkbox-div #Commuting~.custom-control-label::after{
+    background-image: url('assets/images/Commuting.png');
+    width: 100%;
+    height: 76px;
+    background-position: 56% 23%;
+    left: 0px;
+    background-size: 38%;
+}
+.inline-checkbox-div #Commuting:checked~.custom-control-label::after{
+    background-image: url('assets/images/Commuting_selected.png');
+    width: 100%;
+    height: 76px;
+    color: #DC0000;
+    background-position: 56% 23%;
+    left: 0px;
+    background-size: 38%;
+}
+.inline-checkbox-div #Personal~.custom-control-label::after{
+    background-image: url('assets/images/Personal.png');
+    width: 100%;
+    height: 80px;
+    height: 76px;
+    background-position: 50% 29%;
+    left: 0px;
+    background-size: 38%;
+}
+.inline-checkbox-div #Personal:checked~.custom-control-label::after{
+    background-image: url('assets/images/Personal_selected.png');
+    width: 100%;
+    height: 76px;
+    color: #DC0000;
+    background-position: 50% 29%;
+    left: 0px;
+    background-size: 38%;
+}
+.inline-checkbox-div #Business~.custom-control-label::after{
+    background-image: url('assets/images/Business.png');
+    width: 100%;
+    height: 76px;
+    height: 76px;
+    background-position: 50% 23%;
+    left: 0px;
+    background-size: 38%;
+}
+.inline-checkbox-div #Business:checked~.custom-control-label::after{
+    background-image: url('assets/images/Business_Selected.png');
+    width: 100%;
+    height: 76px;
+    color: #DC0000;
+    background-position: 50% 23%;
+    left: 0px;
+    background-size: 38%;
+}
+.inline-checkbox-div #Farming~.custom-control-label::after{
+    background-image: url('assets/images/Farming.png');
+    width: 100%;
+    height: 76px;
+    height: 76px;
+    background-position: 50% 31%;
+    left: 0px;
+    background-size: 35%;
+}
+.inline-checkbox-div #Farming:checked~.custom-control-label::after{
+    background-image: url('assets/images/Farming_selected.png');
+    width: 100%;
+    height: 76px;
+    color: #DC0000;
+    background-position: 50% 31%;
+    left: 0px;
+    background-size: 35%;
+}
+.inline-checkbox-div #Others~.custom-control-label::after{
+    background-image: url('assets/images/Others.png');
+    width: 100%;
+    height: 76px;
+    background-position: 50% 23%;
+    left: 0px;
+    background-size: 30%;
+}
+.inline-checkbox-div #Others:checked~.custom-control-label::after{
+    background-image: url('assets/images/Others_selected.png');
+    width: 100%;
+    height: 76px;
+    color: #DC0000;
+    background-position: 50% 23%;
+    left: 0px;
+    background-size: 30%;
+}
+/* border checkbox css*/
+.border-checkbox-div{
+    padding-left: 0px;
+    margin-right: 0px; 
+}
+.border-checkbox-div input:checked~.custom-control-label{
+    color: #DC0000;
+    border: 1px solid #DC0000;  
+}
+.border-checkbox-div input~.custom-control-label{
+    border: 1px solid #5A5A5A;
+    padding: 2px 34px;
+    border-radius: 5px;
+    margin-right: 5px; 
+    color: #5A5A5A;
+    font-family: barlo-regular;
+}
+.border-checkbox-div .custom-control-input:checked~.custom-control-label::before{
+    background-color: unset;
+    border: 1px solid #DC0000;   
+}
+.border-checkbox-div .custom-control-input:checked~.custom-control-label::after{
+    background: unset;
+    left: 0px;
+}
+.border-checkbox-div .custom-control-input~.custom-control-label::before{
+    display: none;
+}
+.border-checkbox-div .custom-control-input~.custom-control-label::after{
+    display: none;
+}
+.custom-control-input:focus ~ .custom-control-label::before {
+    box-shadow:none !important;
+    border-color: transparent;
+  }
+  .custom-control-input:focus ~ .custom-control-label::after {
+    box-shadow:none !important;
+    border-color: transparent;
+  }
+/* border checkbox css end */
+.inline-checkbox-div #male~.custom-control-label::after{
+    background-image: url('assets/images/Male.png');
+    width: 87px;
+    height: 84px;
+    background-position: 72% 23%;
+}
+.inline-checkbox-div #male:checked~.custom-control-label::after{
+    background-image: url('assets/images/Male_selected.png');
+    width: 87px;
+    height: 84px;
+    color: #DC0000;
+    background-position: 72% 23%;
+}
+.inline-checkbox-div #female~.custom-control-label::after{
+    background-image: url('assets/images/Female.png');
+    width: 88px;
+    height: 84px;
+    background-position: 67% 26%;
+}
+.inline-checkbox-div #female:checked~.custom-control-label::after{
+    background-image: url('assets/images/Female_selected.png');
+    width: 88px;
+    height: 84px;
+    background-position: 67% 26%;
+    color: #DC0000;
+}
+.bg-image{
+    background-image: url("assets/images/bg.svg");
+    padding-top: 24px;
+    /* background-repeat: no-repeat;
+    background-position: 12% -9%;
+    background-size: 97%;
+    min-height: 100vh; */
+    height: 89vh;
+    overflow-y: auto;
+    background-repeat: no-repeat;
+}
+.form-container{
+    background-color: #fff;  
+}
+.inner-container-1{
+   margin-bottom: 90px;
+}
+.ico-facebook{
+    background-image: url("assets/images/facebook.png");
+    background-repeat: no-repeat;
+    width: 15px;
+    height: 25px;
+    margin-right: 8px;
+    display: inline-block;
+    background-position: top right;
+    position: absolute;
+    left: 2px;
+    background-size: 11px;
+    top: 2px;
+}
+.ico-twitter{
+    background-image: url("assets/images/twitter.png");
+    background-repeat: no-repeat;
+    width: 15px;
+    height: 25px;
+    margin-right: 8px;
+    display: inline-block;
+    background-position: top right;
+    position: absolute;
+    left: 2px;
+    background-size: 16px;
+    top: 7px;
+}
+.ico-dropbox{
+    background-image: url("assets/images/dropbox.png");
+    background-repeat: no-repeat;
+    width: 15px;
+    height: 25px;
+    margin-right: 8px;
+    display: inline-block;
+    background-position: top right;
+    position: absolute;
+    left: 3px;
+    background-size: 16px;
+    top: 5px;
+}
+.ico-google{
+    background-image: url("assets/images/search.png");
+    background-repeat: no-repeat;
+    width: 15px;
+    height: 25px;
+    margin-right: 8px;
+    display: inline-block;
+    background-position: top right;
+    position: absolute;
+    left: 4px;
+    background-size: 14px;
+    top: 7px;
+}
+.ico-youtube-play{
+    background-image: url("assets/images/youtube.png");
+    background-repeat: no-repeat;
+    width: 15px;
+    height: 25px;
+    margin-right: 8px;
+    display: inline-block;
+    background-position: top right;
+    position: absolute;
+    left: 4px;
+    background-size: 14px;
+    top: 8px;
+}
+.calendar-ng .ui-inputtext{
+    display: block;
+    width: 100%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ;
+    font-family: barlo-regular;
+}
+.ui-calendar{
+    width: 100%;
+}
+.error{
+    color: #DC0000;
+}
+.main-form select{
+    color: #060606 !important; 
+    font-size: 18px;
+    font-family: barlo-medium !important; 
+    border: 1px solid #C2C2C2;
+}
+.main-form input{
+    color: #060606 !important;
+    font-size: 18px !important;
+    font-family: barlo-medium !important;
+    border: 1px solid #C2C2C2;
+}
+.back-image-grey{
+    background-image: url("assets/images/Asset2.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-right: 11px;
+    margin-right: 11px;
+    background-position: 1px;
+}
+.back-image-white{
+    background-image: url("assets/images/Asset1.png");
+    background-repeat: no-repeat;
+    background-size: 98%;
+}
+@media(max-width: 1600px){
+    .home-bg {
+        background-position: 62% 15%;
+        background-size: 135%;
+        background-repeat: no-repeat;
+    }
+}
+@media(min-width: 1600px){
+    .inner-container .container {
+        max-width: 1254px;
+    }
+    .form-container {
+        max-width: 74%;
+    }
+}

@@ -1,0 +1,22 @@
+@font-face {
+    font-family: barlo-regular;
+    src: url(src/assets/fonts/Barlow-Regular.ttf);
+  }
+@font-face {
+    font-family: barlo-bold;
+    src: url(src/assets/fonts/Barlow-Bold.ttf);
+}
+@font-face {
+    font-family: barlo-medium;
+    src: url(src/assets/fonts/Barlow-Medium.ttf);
+}
+.w-283{
+    width: 283px;
+}
+.bg-image{  
+    background-position: 8% 119%;
+    background-size: cover;
+}
+.w-135{
+    width: 135px;
+}

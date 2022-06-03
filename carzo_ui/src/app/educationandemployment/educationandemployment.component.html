@@ -1,0 +1,83 @@
+<div class="bg-image">
+<div class="container form-container pb-4  mb-5">
+
+        <form [formGroup]="contactForm" class="main-form pt-3">
+            <div class="form-title">
+                <h1>EDUCATION & EMPLOYMENT</h1>
+                <span class="bottom-border"></span>
+            </div>
+    
+            <div class="form-group pb-0">
+                <label class="d-block">What is the highest level of education you have completed?</label>
+                <div class="custom-control custom-radio  border-checkbox-div  custom-control-inline pl-0">
+                    <input type="radio" class="custom-control-input" id="Single" formControlName="hightleveleducation" value="High school" checked [(ngModel)]="educationAndEmployment.hightleveleducation">
+                    <label class="custom-control-label" for="Single">High school</label>
+                </div>
+                <div class="custom-control custom-radio  border-checkbox-div  custom-control-inline pl-0">
+                    <input type="radio" class="custom-control-input" id="Associate" formControlName="hightleveleducation" value="Associate" [(ngModel)]="educationAndEmployment.hightleveleducation">
+                    <label class="custom-control-label" for="Associate">Associate</label>
+                </div>
+                <div class="custom-control custom-radio  border-checkbox-div  custom-control-inline pl-0">
+                    <input type="radio" class="custom-control-input" id="Lessthanhighschool" formControlName="hightleveleducation" value="Less than high school" [(ngModel)]="educationAndEmployment.hightleveleducation">
+                    <label class="custom-control-label" for="Lessthanhighschool">Less than high school</label>
+                </div>
+                <div class="custom-control custom-radio  border-checkbox-div  custom-control-inline pl-0">
+                    <input type="radio" class="custom-control-input" id="Doctorate" formControlName="hightleveleducation" value="Doctorate" [(ngModel)]="educationAndEmployment.hightleveleducation">
+                    <label class="custom-control-label" for="Doctorate">Doctorate</label>
+                </div>
+                <div class="custom-control custom-radio  border-checkbox-div  custom-control-inline pl-0">
+                    <input type="radio" class="custom-control-input" id="Masters" formControlName="hightleveleducation" value="Masters" [(ngModel)]="educationAndEmployment.hightleveleducation">
+                    <label class="custom-control-label" for="Masters">Masters</label>
+                </div>
+                <div class="custom-control custom-radio  border-checkbox-div  custom-control-inline pl-0">
+                    <input type="radio" class="custom-control-input" id="Medicalschool" formControlName="hightleveleducation" value="Medical school" [(ngModel)]="educationAndEmployment.hightleveleducation">
+                    <label class="custom-control-label" for="Medicalschool">Medical school</label>
+                </div>
+                <div class="custom-control custom-radio  border-checkbox-div  custom-control-inline pl-0">
+                    <input type="radio" class="custom-control-input" id="Lawschool" formControlName="hightleveleducation" value="Law school" [(ngModel)]="educationAndEmployment.hightleveleducation">
+                    <label class="custom-control-label" for="Lawschool">Law school</label>
+                </div>
+                <div class="custom-control custom-radio  border-checkbox-div  custom-control-inline pl-0">
+                    <input type="radio" class="custom-control-input" id="Vocational" formControlName="hightleveleducation" value="Vocational" [(ngModel)]="educationAndEmployment.hightleveleducation">
+                    <label class="custom-control-label" for="Vocational">Vocational</label>
+                </div>
+            </div>
+            <div class="form-group pb-0">
+                <label class="d-block">What is the highest level of education you have completed?</label>
+                <div class="custom-control custom-radio  border-checkbox-div  custom-control-inline pl-0">
+                    <input type="radio" class="custom-control-input" id="Employed" formControlName="profile" value="Employed" [(ngModel)]="educationAndEmployment.profile" checked>
+                    <label class="custom-control-label" for="Employed">Employed</label>
+                </div>
+                <div class="custom-control custom-radio  border-checkbox-div  custom-control-inline pl-0">
+                    <input type="radio" class="custom-control-input" id="selfemployed" formControlName="profile" value="Self-Employed" [(ngModel)]="educationAndEmployment.profile">
+                    <label class="custom-control-label" for="selfemployed">Self-Employed</label>
+                </div>
+                <div class="custom-control custom-radio  border-checkbox-div  custom-control-inline pl-0">
+                    <input type="radio" class="custom-control-input" id="Retired" formControlName="profile" value="Retired" [(ngModel)]="educationAndEmployment.profile">
+                    <label class="custom-control-label" for="Retired">Retired</label>
+                </div>
+                <div class="custom-control custom-radio  border-checkbox-div  custom-control-inline pl-0">
+                    <input type="radio" class="custom-control-input" id="FulltimestudentHighSchool" formControlName="profile" value="Full time student-High School" checked [(ngModel)]="educationAndEmployment.profile">
+                    <label class="custom-control-label" for="FulltimestudentHighSchool">Full time student-High School</label>
+                </div>
+    
+            </div>
+            <div class="form-group pb-1 toggle-switch-div pb-4">
+                <label class="d-block">Annual salary<span class="error" *ngIf="contactForm.controls.annualsalary.invalid  && submitted">*</span></label>
+                <label style="float: left;margin: 1%;">$  </label><input type="text" class="form-control form-control-lg w-283" formControlName="annualsalary" [(ngModel)]="educationAndEmployment.annualsalary" (keypress)="numericOnly($event)">
+            </div>
+            <div class="form-group pb-1">
+                    <label class="d-block">Occupation</label>
+                    <select name="cars" formControlName="occupation" class="custom-select w-283" [(ngModel)]="educationAndEmployment.occupation">
+                       <option selected value="">Select</option>
+                    <option *ngFor="let occupationlist of occupation?.occupations" value="{{occupationlist}}">{{ occupationlist }}</option>
+                    </select>
+                </div>
+            <div class="form-group text-right mt-5">
+                <span class="prevnext prev" (click)="goToPrevious(contactForm)"><span class="icon-prev"></span>Previous</span><span class="prevnext next"
+                (click)="goToNext(contactForm)">Next<span class="icon-next"></span></span>
+            </div>
+        </form>
+    
+    </div>
+    <div>

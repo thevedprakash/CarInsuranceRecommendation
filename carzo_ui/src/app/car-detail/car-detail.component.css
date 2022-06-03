@@ -1,0 +1,172 @@
+@font-face {
+    font-family: barlo-bold;
+    src: url(src/assets/fonts/Barlow-Bold.ttf);
+}
+@font-face {
+    font-family: barlo-medium;
+    src: url(src/assets/fonts/Barlow-Medium.ttf);
+}
+@font-face {
+    font-family: barlo-light;
+    src:  url(src/assets/fonts/Barlow-Light.ttf);
+}
+@font-face {
+    font-family: barlo-semibold;
+    src:  url(src/assets/fonts/Barlow-SemiBold.ttf);
+}
+.car-title{
+    color: #000000;
+    font-family: barlo-medium;
+    font-size: 14px;
+    width: 100%;
+}
+.car-priv-info{
+    font-family: barlo-light;
+    color: #5A5A5A;
+    font-size: 13px;
+}
+.date-field{
+    color: #5A5A5A;
+    font-family: barlo-medium;
+    font-size: 12px;
+}
+.second-title{
+    color: #858585;
+    font-size: 14px;
+}
+.second-title~p{
+    color: #5A5A5A;
+    font-family: barlo-medium;
+    font-size: 14px;
+}
+.table-title{
+    color: #414040;
+    font-family: barlo-bold;
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+.inner-para{
+    color: #5A5A5A;
+    font-size: 20px;
+    margin-bottom: 7px;
+    line-height: 20px;
+    vertical-align: middle;
+    display: table-cell;
+    text-align: center;
+    padding-top: 49px;
+    border-radius: 5px;
+    padding-right: 17px;
+}
+.edit-btn{
+    border: 1px solid #DC0000;
+    color: #DC0000;
+    padding: 3px 10px;
+    border-radius: 5px; 
+    font-size: 8px;
+    font-family: barlo-medium;
+    float: right;
+    margin-top: 6px;
+    cursor: pointer;
+}
+.bg-image{
+    background-position: 12% 25%;
+    background-size: 97%;
+    min-height: 84vh;
+}
+.bg-color-f1{
+    background-color: #F1F1F1;
+}
+.h-110px{
+    min-height: 327px;
+}
+label.title-field {
+    text-transform: capitalize;
+    display: block;
+    position: relative;
+    padding-right: 23px;
+}
+table span {
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 1px;
+    padding-bottom: 10px;
+    color: #797979;
+    padding-left: 17px;
+    display: inline-block;
+}
+.detail-button{
+    display: block;
+    background-color: #de0000;
+    font-size: 14px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 2px 9px;
+    width: 100px;
+    margin: 29px auto 24px;
+    font-family: barlo-medium;
+}
+span.asterix:after {
+    content: "*";
+    position: absolute;
+    color: #ff0000;
+}
+.red{
+    color: #ff0000;
+    font-size: 13px;
+    padding-top: 1px;
+}
+.detail-div{
+    margin: 0px 40px 27px;
+}
+.radio-img{
+    width: 50px;
+    height: 50px;
+    content: "";
+    background-color: #fff;
+    position: absolute;
+    top: 45px;
+    right: 43px;
+    border-radius: 50%;
+}
+.mb-23{
+    margin-bottom: 23px;
+}
+.dollar{
+    font-size: 17px;
+    vertical-align: baseline;
+    font-family: barlo-medium;
+}
+.heading-info{
+    font-family: barlo-bold;
+    font-size: 19px;
+    color: #3f3f3f;
+}
+.recom-detail{
+   background-color:  #f2f2f2;
+}
+.recommend-title{
+    color: #ef3d2f;
+    font-size: 19px;
+    font-family: barlo-bold;
+    padding-left: 39px;
+    padding-top: 38px;
+}
+.inner-span-content{
+   color: #414141;
+   font-family:  barlo-medium;
+}
+.color-4{
+   color: #404040;
+}
+.title-field:after{
+    content: ":";
+    position: absolute;
+    right: 0px;
+    font-size: 18px;
+    top: -2px;
+}
+@media(max-width: 1337px){
+    .h-110px {
+        min-height: 271px;
+    }
+}

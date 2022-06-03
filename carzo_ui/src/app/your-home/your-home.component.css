@@ -1,0 +1,32 @@
+@font-face {
+    font-family: barlo-regular;
+    src: url(src/assets/fonts/Barlow-Regular.ttf);
+  }
+@font-face {
+    font-family: barlo-bold;
+    src: url(src/assets/fonts/Barlow-Bold.ttf);
+}
+@font-face {
+    font-family: barlo-medium;
+    src: url(src/assets/fonts/Barlow-Medium.ttf);
+}
+.w-135{
+    width: 135px;
+}
+.main-form input, .main-form textarea{
+    color: #060606;
+    font-size: 18px;
+    font-family: barlo-medium;
+    border: 1px solid #C2C2C2 ; 
+    display: inline;
+}
+.text-group label{
+    color: #929292;
+    font-size: 14px;
+    margin-bottom: 3px;
+    font-family: barlo-regular;
+}
+.bg-image{  
+    background-position: 12% -51%;
+    background-size: 97%;  
+}

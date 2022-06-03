@@ -1,0 +1,133 @@
+<div class="bg-image">
+    <div class="container form-container  mb-5 p-0">
+        <div class="row mt-3 px-4 mx-0">
+            <div class="col-md-12">
+                <h4 class="font-bold font-14 color-4">Coverages based on your profile</h4>
+            </div>
+        </div>
+        <div>
+            <div class="row pt-3 detail-div">
+                <div class="col-md-4 pl-0">
+                    <div class="">
+                        <h4 class="heading-info">User Information</h4>
+                        <div class="border-right mr-3">
+                            <table>
+                                <tr>
+                                    <td> <label class="title-field">Name</label></td>
+                                    <td><span>{{cardetailresponse.firstname}}
+                                            {{cardetailresponse.lastname}}</span></td>
+                                </tr>
+                                <tr>
+                                    <td> <label class="title-field">Email Address</label></td>
+                                    <td><span> {{cardetailresponse.email}}</span></td>
+                                </tr>
+                                <tr>
+                                    <td> <label class="title-field">Phone number</label></td>
+                                    <td><span> {{cardetailresponse.phoneNumber}}</span></td>
+                                </tr>
+                                <tr>
+                                    <td> <label class="title-field">Annual Salary</label></td>
+                                    <td><span> $ {{cardetailresponse.annualsalary}}</span></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 pl-0">
+                    <div class="">
+                        <h4 class="heading-info">Vehicle Information</h4>
+                        <div class="border-right mr-3">
+                            <table>
+                                <tr>
+                                    <td> <label class="title-field">Make</label></td>
+                                    <td><span> {{cardetailresponse.makeName}}</span></td>
+                                </tr>
+                                <tr>
+                                    <td> <label class="title-field">Model</label></td>
+                                    <td><span> {{cardetailresponse.modelName}}</span></td>
+                                </tr>
+                                <tr>
+                                    <td> <label class="title-field">Year</label></td>
+                                    <td><span> {{cardetailresponse.year}}</span></td>
+                                </tr>
+                                <tr>
+                                    <td> <label class="title-field">Ownership</label></td>
+                                    <td><span>{{cardetailresponse.ownerShip}}</span></td>
+                                </tr>
+                                <tr>
+                                    <td> <label class="title-field">IDV</label></td>
+                                    <td><span> $ {{cardetailresponse.idv_value}}</span></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 pl-0">
+                    <div class="">
+                        <h4 class="heading-info">Other Information</h4>
+                        <div class="mr-3">
+                            <table>
+                                <tr>
+                                    <td> <label class="title-field">State</label></td>
+                                    <td><span>{{cardetailresponse.state}}</span></td>
+                                </tr>
+                                <tr>
+                                    <td> <label class="title-field">Parking Space</label></td>
+                                    <td><span> {{cardetailresponse.parkingSpace}}</span></td>
+                                </tr>
+                                <tr>
+                                    <td> <label class="title-field">Anti Theft</label></td>
+                                    <td><span> {{cardetailresponse.antiTheft}}</span></td>
+                                </tr>
+                                <tr>
+                                    <td> <label class="title-field">Primary Usage</label></td>
+                                    <td><span> {{cardetailresponse.commute}}</span></td>
+                                </tr>
+                            </table>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="recom-detail h-100">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <h4 class="recommend-title">Mandatory Coverage</h4>
+                    </div>
+                </div>
+                <div class="row mb-2 px-4 mx-0 mt-3">
+                    <div class="col-xl-4 h-110px d-table back-image-white" *ngFor="let plandetails of resultArray">
+                        <span class="radio-img"><img class="img-fluid" src="./assets/images/StateMinimum.svg"></span>
+                        <p class="inner-para font-semibold"><span
+                                class="asterix inner-span-content pt-3 d-block">Liability Coverage</span><span
+                                class="detail-button">View Details</span></p>
+                    </div>
+                    <div class="col-xl-4  h-110pxd-table ">
+                        <div class=" h-110px back-image-grey"></div>
+                    </div>
+                    <div class="col-xl-4 h-110px d-table">
+                        <div class="h-110px back-image-grey"></div>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-xl-12">
+                        <h4 class="recommend-title">Other Recommended Coverages</h4>
+                    </div>
+                </div>
+                <div class="row mb-4 px-4 mx-0 mt-4">
+                    <div class="col-xl-4 h-110px d-table mb-23 back-image-white"
+                        *ngFor="let plandetailsstring of stringArray;let i = index;">
+                        <span class="radio-img"><img src="./assets/images/{{imgArray[i]}}.svg"></span>
+                        <p class="inner-para font-semibold"><span
+                                class="inner-span-content pt-3 d-block">{{plandetailsstring}}</span><span
+                                class="detail-button">View Details</span></p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>

@@ -1,0 +1,12 @@
+@font-face {
+    font-family: barlo-bold;
+    src: url(src/assets/fonts/Barlow-Bold.ttf);
+}
+@font-face {
+    font-family: barlo-medium;
+    src: url(src/assets/fonts/Barlow-Medium.ttf);
+}
+.bg-image{  
+    background-position: 12% 63%;
+    background-size: 97%;  
+}

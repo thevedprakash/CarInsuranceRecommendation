@@ -1,0 +1,34 @@
+<div class="bg-image">
+    <div class="container form-container pb-4  mb-5">
+
+    <form [formGroup]="contactForm" class="main-form pt-3">
+        <div class="form-title">
+            <h1>YOUR LICENSE</h1>
+            <span class="bottom-border"></span>
+        </div>
+        <div class="form-group pb-1 toggle-switch-div pb-4">
+            <label class="d-block">Do you have a valid U.S. license?</label>
+            <div class="custom-control custom-switch">
+                <input type="checkbox" class="custom-control-input" id="usLicense" formControlName="usLicense" [(ngModel)]="yourLicense.usLicense">
+                <label class="custom-control-label" for="usLicense"></label>
+            </div>
+        </div>
+        <div class="form-group pb-1">
+                <label class="d-block">How old were you when you first got your license in the U.S. or Canada?</label>
+                <input type="text" class="form-control form-control-lg w-135" formControlName="firstLicense" [(ngModel)]="yourLicense.firstLicense">
+            </div>
+        <div class="form-group pb-1 toggle-switch-div pb-4">
+                <label class="d-block">Have you completed any voluntary driver training classes in the past 3 years?</label>
+                <div class="custom-control custom-switch">
+                    <input type="checkbox" class="custom-control-input" id="voluntarydrivingclass" formControlName="voluntarydrivingclass" [(ngModel)]="yourLicense.voluntarydrivingclass">
+                    <label class="custom-control-label" for="voluntarydrivingclass"></label>
+                </div>
+            </div>
+
+            <div class="form-group text-right mt-5">
+                <span class="prevnext prev" (click)="goToPrevious(contactForm)"><span class="icon-prev"></span>Previous</span><span class="prevnext next"
+                   (click)="goToNext(contactForm)">Next<span class="icon-next"></span></span>
+            </div>
+    </form>
+</div>
+</div>

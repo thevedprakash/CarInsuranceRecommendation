@@ -1,0 +1,44 @@
+<div class="bg-image"><div class="container form-container pb-4  mb-5">
+
+    <form [formGroup]="contactForm" class="main-form pt-3">
+        <div class="form-title">
+            <h1>YOUR DRIVING HISTORY</h1>
+            <span class="bottom-border"></span>
+        </div>
+
+        <div class="form-group pb-1 toggle-switch-div pb-4">
+            <label class="d-block">Has your license been suspended or revoked in the last 5 years?</label>
+            <div class="custom-control custom-switch">
+                <input type="checkbox" class="custom-control-input" id="DL_Suspended" formControlName="DL_Suspended" [(ngModel)]="yourDrivingHistory.DL_Suspended">
+                <label class="custom-control-label" for="DL_Suspended"></label>
+            </div>
+        </div>
+        <div class="form-group pb-1 toggle-switch-div pb-4">
+            <label class="d-block">Any DUIs in the last 10 years?</label>
+            <div class="custom-control custom-switch">
+                <input type="checkbox" class="custom-control-input" id="dui" formControlName="dui" [(ngModel)]="yourDrivingHistory.dui">
+                <label class="custom-control-label" for="dui"></label>
+            </div>
+        </div>
+        <div class="form-group pb-1 toggle-switch-div pb-4">
+            <label class="d-block">Are you required to have an SR-22 or other Financial Responsibility document?</label>
+            <div class="custom-control custom-switch">
+                <input type="checkbox" class="custom-control-input" id="Financialdocument" formControlName="Financialdocument" [(ngModel)]="yourDrivingHistory.Financialdocument">
+                <label class="custom-control-label" for="Financialdocument"></label>
+            </div>
+        </div>
+        <div class="form-group pb-1 toggle-switch-div pb-4">
+            <label class="d-block">Have you had any accidents, moving violations, or claims in the last 5 years?</label>
+            <div class="custom-control custom-switch">
+                <input type="checkbox" class="custom-control-input" id="claims" formControlName="claims" [(ngModel)]="yourDrivingHistory.claims">
+                <label class="custom-control-label" for="claims"></label>
+            </div>
+        </div>
+        <div class="form-group text-right mt-5">
+            <span class="prevnext prev" (click)="goToPrevious(contactForm)"><span class="icon-prev"></span>Previous</span><span class="prevnext next"
+               (click)="goToNext(contactForm)">Next<span class="icon-next"></span></span>
+        </div>
+    </form>
+
+</div>
+</div>

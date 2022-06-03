@@ -1,0 +1,65 @@
+<div class="bg-image">
+<div class="container form-container pb-4  mb-5">
+
+    <form [formGroup]="contactForm" class="main-form pt-3">
+        <div class="form-title">
+            <h1>ABOUT YOU</h1>
+            <span class="bottom-border"></span>
+        </div>
+        <div class="row ">
+            <div class="col-md-6">
+                <div class="form-group pt-0 pb-1">
+                    <label class="d-block">First Name</label>
+                    <input type="text" class="form-control form-control-lg" formControlName="firstname" [(ngModel)]="aboutyou.firstname">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group pt-0 pb-1">
+                    <label class="d-block">Last Name</label>
+                    <input type="text" class="form-control form-control-lg" formControlName="lastname" [(ngModel)]="aboutyou.lastname">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group pt-0 pb-1 calendar-ng">
+                    <label class="d-block">Date of Birth</label>
+                    <p-calendar  formControlName="dateofbirth" class="w-100"  [(ngModel)]="aboutyou.dateofbirth" [monthNavigator]="true" [yearNavigator]="true" yearRange="1980:2030"></p-calendar>
+                </div>
+            </div>
+
+        </div>
+        <div class="form-group inline-checkbox-div pb-0">
+            <label class="d-block">Gender</label>
+            <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" class="custom-control-input" id="male" formControlName="gender" value="male" checked [(ngModel)]="aboutyou.gender">
+                <label class="custom-control-label" for="male"><span>Male</span></label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" class="custom-control-input" id="female" formControlName="gender" value="female" [(ngModel)]="aboutyou.gender">
+                <label class="custom-control-label" for="female"><span class="pl-0">Female</span></label>
+            </div>
+
+        </div>
+        <div class="form-group pb-0">
+            <label class="d-block">Marital Status</label>
+            <div class="custom-control custom-radio  border-checkbox-div  custom-control-inline pl-0">
+                <input type="radio" class="custom-control-input" id="Single" formControlName="maritialstatus" value="Single" checked [(ngModel)]="aboutyou.maritialstatus">
+                <label class="custom-control-label" for="Single">Single</label>
+            </div>
+            <div class="custom-control custom-radio  border-checkbox-div  custom-control-inline pl-0">
+                <input type="radio" class="custom-control-input" id="Married" formControlName="maritialstatus" value="Married" [(ngModel)]="aboutyou.maritialstatus">
+                <label class="custom-control-label" for="Married">Married</label>
+            </div>
+            <div class="custom-control custom-radio  border-checkbox-div  custom-control-inline pl-0">
+                <input type="radio" class="custom-control-input" id="Divorced" formControlName="maritialstatus" value="Divorced" [(ngModel)]="aboutyou.maritialstatus">
+                <label class="custom-control-label" for="Divorced">Divorced</label>
+            </div>
+        </div>
+
+        <div class="form-group text-right mt-5">
+            <span class="prevnext prev" (click)="goToPrevious(contactForm)"><span class="icon-prev"></span>Previous</span><span class="prevnext next"
+               (click)="goToNext(contactForm)">Next<span class="icon-next"></span></span>
+        </div>
+    </form>
+
+</div>
+</div>
